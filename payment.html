@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+    body {
+      background-color: #134A8B;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .tab {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .tab a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 16px); /* Adjusted width to account for padding */
+      padding: 8px;
+      margin-top: 20px; /* Increased margin between textboxes */
+      box-sizing: border-box;
+      background-color: #D9D9D9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .continue-button {
+      background-color: #E8D52B;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Course Sign Up</h1>
+
+  <div class="tab">
+    <div><a href="course_select.html">Course Select</a></div>
+    <div><a href="date_time.html">Date/Time</a></div>
+    <div><a href="location.html">Location</a></div>
+    <div><a href="additional_information.html">Additional Information</a></div>
+    <div><a href="payment.html">Payment</a></div>
+    <div><a href="confirmation.html">Confirmation</a></div>
+  </div>
+
+  <div>
+    <label for="cardDetails"></label>
+    <input type="text" id="cardDetails" name="cardDetails" placeholder="Card Number MM/YY CV">
+
+    <label for="streetAddress"></label>
+    <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address">
+
+    <label for="countrySelect"></label>
+    <input type="text" id="countrySelect" name="countrySelect" placeholder="Country Select">
+
+    <label for="city"></label>
+    <input type="text" id="city" name="city" placeholder="City">
+
+    <label for="state"></label>
+    <input type="text" id="state" name="state" placeholder="State">
+
+    <label for="zipCode"></label>
+    <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code">
+  </div>
+
+  <button class="continue-button">Continue</button>
+</div>
+
+</body>
+</html>
